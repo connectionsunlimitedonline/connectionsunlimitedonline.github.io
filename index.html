@@ -1,229 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect 4 - Classic Strategy Board Game | Play Online Free</title>
-    <meta name="description" content="Play Connect 4 online for free! Challenge AI or friends in this classic strategy game. Connect four discs horizontally, vertically, or diagonally to win. Perfect for all ages, combining casual fun with strategic depth.">
-    <meta name="keywords" content="Connect 4, Connect Four, strategy game, board game, online game, free game, two player game, AI game, family game, classic board game, strategy puzzle, multiplayer game">
-    <meta property="og:title" content="Connect 4 - Classic Strategy Board Game">
-    <meta property="og:description" content="Play Connect 4 online - Challenge AI or friends in this classic strategy game. Connect four discs to win!">
-    <meta property="og:type" content="website">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connections Unlimited - Free Word Association Puzzle Game | Daily Brain Training</title>
+    <meta
+      name="description"
+      content="Play Connections Unlimited, the free word association puzzle game. Group words into meaningful categories, discover hidden connections, and enjoy unlimited puzzles. Perfect for vocabulary building and mental exercise."
+    />
+    <meta
+      name="keywords"
+      content="connections unlimited, word puzzle game, word association game, brain training, vocabulary game, word categories, free online game, word connections, daily puzzle game"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/igames/connectionsunlimited/" />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Connections Unlimited - Free Word Association Puzzle Game" />
+    <meta
+      property="og:description"
+      content="Challenge yourself with unlimited word grouping puzzles. Find connections, sort words, and test your knowledge with this addictive brain training game!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/igames/connectionsunlimited/" />
+    <meta property="og:image" content="https://yourdomain.com/images/connections-unlimited-preview.jpg" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Connections Unlimited - Word Puzzle Game" />
+    <meta name="twitter:description" content="Group words, find connections, train your brain with unlimited puzzles!" />
+    <meta name="twitter:image" content="https://yourdomain.com/images/connections-unlimited-preview.jpg" />
+
+    <!-- Mobile Specific Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            100: '#e6f0ff',
-                            700: '#1a56db',
-                        },
-                    },
-                },
-            },
-        }
-    </script>
+
+    <!-- Custom Styles -->
     <style>
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+      /* Custom scrollbar for better UX */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      /* Improved touch targets for mobile */
+      @media (max-width: 768px) {
+        .touch-target {
+          min-height: 48px;
+          min-width: 48px;
         }
-        .animate-pulse {
-            animation: pulse 2s infinite;
-        }
+      }
+
+      /* Smooth transitions */
+      .transition-all {
+        transition: all 0.3s ease;
+      }
     </style>
-</head>
-<body class="min-h-screen bg-gray-50 py-3">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  </head>
+  <body class="bg-gray-50 min-h-screen flex flex-col">
+    <header class="bg-white shadow-sm">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center">Connections Unlimited</h1>
+      </nav>
+    </header>
+
+    <main class="flex-1 py-4 sm:py-6">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Game Container -->
-        <div class="w-full flex flex-col items-center">
-            <div class="w-full max-w-3xl aspect-[4/3] relative mb-8">
-                <iframe
-                    title="Connect 4 Game"
-                    src="https://www.calculators.org/games/connect-4/game.php"
-                    class="absolute top-0 left-0 w-full h-full border-0 rounded-lg shadow-lg"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-            </div>
+        <div class="w-full flex flex-col items-center p-2 sm:p-4">
+          <div class="w-full max-w-md sm:max-w-lg md:max-w-xl aspect-[9/16] sm:aspect-[3/4] md:aspect-[4/5] relative">
+            <iframe
+              title="Play Connections Unlimited - Word Association Puzzle Game"
+              src="https://1games.io/game/connections-game/"
+              class="absolute top-0 left-0 w-full h-full border-0 rounded-lg shadow-lg bg-white"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
 
-        <!-- Intro Content -->
-        <div class="mt-6 sm:mt-12 flex flex-col items-center px-2 sm:px-6 lg:px-8">
-            <!-- Header Section -->
-            <div class="w-full max-w-4xl text-center space-y-4 sm:space-y-8 mb-8 sm:mb-12">
-                <h1 class="text-4xl sm:text-5xl font-bold text-gray-900">Connect 4</h1>
-                <p class="text-sm sm:text-base text-gray-600">
-                    Welcome to Connect 4, the timeless strategy game that has captivated players of all ages for generations! This classic board game combines simple rules with deep strategic gameplay, making it perfect for both casual players and strategic thinkers. Take turns dropping colored discs on a 7x6 grid, aiming to connect four of your discs in a row - horizontally, vertically, or diagonally. Challenge our sophisticated AI opponent or engage in exciting matches against friends in this battle of tactics and foresight. With its perfect blend of accessibility and strategic depth, Connect 4 offers endless entertainment for players of all skill levels.
-                </p>
+        <!-- Enhanced Game Description -->
+        <div class="mt-12 flex flex-col items-center px-4 sm:px-6 lg:px-8">
+          <div class="w-full max-w-4xl text-center space-y-8 mb-12">
+            <div class="prose prose-lg max-w-none">
+              <h2 class="text-4xl font-bold text-gray-900 mb-6">Welcome to Connections Unlimited</h2>
+              <p class="text-xl text-gray-600 leading-relaxed">
+                Dive into the world of Connections Unlimited, where words come together in fascinating ways! This engaging puzzle game challenges you
+                to discover hidden connections between seemingly unrelated words, testing your vocabulary, cultural knowledge, and analytical
+                thinking.
+              </p>
             </div>
+          </div>
 
-            <!-- Main Content -->
-            <div class="max-w-6xl w-full space-y-6 sm:space-y-10">
-                <div class="bg-white p-4 sm:p-8 lg:p-12 rounded-xl shadow-md border border-gray-100">
-                    <!-- Game Introduction Section -->
-                    <section class="space-y-4">
-                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">How to Play Connect 4</h2>
-                        <div class="space-y-4 text-gray-700 leading-relaxed">
-                            <div class="bg-gray-50 p-3 sm:p-6 rounded-lg mt-4 sm:mt-6">
-                                <div class="space-y-6 sm:space-y-8">
-                                    <div>
-                                        <h2 class="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Game Overview</h2>
-                                        <div class="space-y-4">
-                                            <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-2 sm:space-y-0">
-                                                <div class="sm:w-24 flex-shrink-0">
-                                                    <span class="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">Rules</span>
-                                                </div>
-                                                <p class="text-sm sm:text-base text-gray-700">
-                                                    Connect 4 is played on a vertical grid with 7 columns and 6 rows. Players take turns dropping their colored discs into any column of their choice. The disc will fall to the lowest available position in that column. The objective is simple yet engaging: be the first to connect four of your discs in a row - horizontally, vertically, or diagonally. The game requires careful planning and strategic thinking, as each move can either lead to victory or create opportunities for your opponent.
-                                                </p>
-                                            </div>
-                                            
-                                            <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-2 sm:space-y-0">
-                                                <div class="sm:w-24 flex-shrink-0">
-                                                    <span class="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">Strategy</span>
-                                                </div>
-                                                <p class="text-sm sm:text-base text-gray-700">
-                                                    Success in Connect 4 requires mastery of several key strategies. Control the center columns, as they offer the most opportunities for connections. Create multiple threats simultaneously to force your opponent into defensive moves. Watch carefully for diagonal opportunities, as they're often the most overlooked. Block your opponent's three-in-a-row formations while building your own winning positions. Advanced players should think several moves ahead and avoid placing discs that might help their opponent create a winning move.
-                                                </p>
-                                            </div>
-                                            
-                                            <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-2 sm:space-y-0">
-                                                <div class="sm:w-24 flex-shrink-0">
-                                                    <span class="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">Features</span>
-                                                </div>
-                                                <p class="text-sm sm:text-base text-gray-700">
-                                                    Our online version of Connect 4 offers a rich gaming experience with multiple features. Challenge our adaptive AI opponent that provides engaging gameplay for both beginners and experienced players. Play against friends in local multiplayer mode for exciting head-to-head matches. Enjoy the clean, intuitive interface designed for seamless gameplay across all devices. The game includes helpful highlights for winning combinations and potential threats, making it perfect for learning and improving your strategy. Whether you're a casual player or a strategic mastermind, Connect 4 provides endless entertainment and opportunities for skill development.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+          <!-- Game Features -->
+          <div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">🎯 Key Features</h3>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Unlimited puzzles available 24/7</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Progressive difficulty levels</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>No time pressure - solve at your own pace</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Perfect for vocabulary building</span>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">🌟 Benefits</h3>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Enhance cognitive skills</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Improve pattern recognition</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Expand vocabulary knowledge</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Develop critical thinking</span>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-                    <!-- Game Progression Section -->
-                    <div class="mt-6 sm:mt-8 bg-gray-50 p-3 sm:p-6 rounded-lg">
-                        <h3 class="text-lg sm:text-xl font-bold mb-4 sm:mb-6">Game Progression</h3>
-                        <div class="space-y-6 sm:space-y-8">
-                            <!-- Starting Position -->
-                            <div class="text-center">
-                                <div class="mb-3 sm:mb-4">
-                                    <h4 class="text-base sm:text-lg font-semibold text-gray-900 mb-2">Starting Position</h4>
-                                    <p class="text-sm sm:text-base text-gray-700 max-w-2xl mx-auto">
-                                        The game begins with an empty 7x6 grid, presenting players with a clean slate full of possibilities. Each column offers different strategic advantages, with the center positions being particularly valuable for creating winning opportunities. The first move often sets the tone for the entire game, making it crucial to start with a well-thought-out strategy.
-                                    </p>
-                                </div>
-                            </div>
+          <!-- How to Play Section -->
+          <div class="max-w-6xl w-full space-y-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+              <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">How to Play</h2>
 
-                            <!-- First Move Strategy -->
-                            <div class="text-center">
-                                <div class="mb-3 sm:mb-4">
-                                    <h4 class="text-base sm:text-lg font-semibold text-gray-900 mb-2">First Move Strategy</h4>
-                                    <p class="text-sm sm:text-base text-gray-700 max-w-2xl mx-auto">
-                                        The opening move is crucial in Connect 4. Many experienced players opt for the center column, as it provides the most opportunities for creating winning combinations. This strategic choice allows for both horizontal and diagonal connections while maintaining flexibility for future moves. The first player's choice of column can significantly influence the flow of the game and the available options for both players.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Mid-Game Tactics -->
-                            <div class="text-center">
-                                <div class="mb-3 sm:mb-4">
-                                    <h4 class="text-base sm:text-lg font-semibold text-gray-900 mb-2">Mid-Game Tactics</h4>
-                                    <p class="text-sm sm:text-base text-gray-700 max-w-2xl mx-auto">
-                                        As the game progresses, the complexity increases with each move. Players must balance offensive opportunities with defensive necessities. Creating multiple threats simultaneously becomes crucial, forcing opponents to make difficult choices. Watch for diagonal connections, as they often provide surprise winning opportunities. Strategic placement of discs can create "double threats" - situations where blocking one winning move creates another.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Victory Condition -->
-                            <div class="text-center">
-                                <div class="mb-3 sm:mb-4">
-                                    <h4 class="text-base sm:text-lg font-semibold text-gray-900 mb-2">Victory Condition</h4>
-                                    <p class="text-sm sm:text-base text-gray-700 max-w-2xl mx-auto">
-                                        The game reaches its climax when a player successfully connects four discs in any direction. Victory can be achieved through careful planning and strategic placement, whether through a straight horizontal line, a vertical stack, or a diagonal connection. The winning combination is highlighted to celebrate the victory and help players learn from the successful strategy. Understanding common winning patterns is key to both achieving victory and preventing opponent wins.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Section -->
-                    <section class="mt-8 sm:mt-12 space-y-4 sm:space-y-6">
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
-
-                        <div class="space-y-3 sm:space-y-4">
-                            <div class="rounded-lg border border-gray-200 p-3 sm:p-4">
-                                <h3 class="text-base sm:text-lg font-semibold text-gray-900">How do I start playing?</h3>
-                                <p class="mt-2 text-sm sm:text-base text-gray-700">
-                                    Getting started with Connect 4 is simple and intuitive. Click the start button to choose your preferred game mode - either challenge our adaptive AI opponent or play against a friend locally. The game automatically assigns colors to players and alternates first moves between games to ensure fairness. To make a move, simply click on your chosen column, and your disc will drop to the lowest available position. The game interface provides clear visual feedback for valid moves and winning combinations.
-                                </p>
-                            </div>
-
-                            <div class="rounded-lg border border-gray-200 p-3 sm:p-4">
-                                <h3 class="text-base sm:text-lg font-semibold text-gray-900">What are the best strategies?</h3>
-                                <p class="mt-2 text-sm sm:text-base text-gray-700">
-                                    Successful Connect 4 strategy involves several key principles:<br />
-                                    • Control the center columns, especially the bottom center position, as it provides the most opportunities for connections<br />
-                                    • Look for diagonal connections, as they're often overlooked by opponents and can lead to surprise victories<br />
-                                    • Create 2x2 blocks to threaten multiple directions simultaneously<br />
-                                    • Force your opponent's moves by creating multiple threats that require immediate attention<br />
-                                    • Develop a strong understanding of "threat space" - areas where winning connections could potentially be made<br />
-                                    • Practice thinking several moves ahead to anticipate and counter opponent strategies<br />
-                                    • Use defensive moves to block opponent's winning opportunities while setting up your own
-                                </p>
-                            </div>
-
-                            <div class="rounded-lg border border-gray-200 p-3 sm:p-4">
-                                <h3 class="text-base sm:text-lg font-semibold text-gray-900">How challenging is the game?</h3>
-                                <p class="mt-2 text-sm sm:text-base text-gray-700">
-                                    Connect 4 offers a perfect balance of accessibility and strategic depth. While the rules are simple to understand, mastering the game requires significant skill and practice. The game provides more complexity than Tic-tac-toe, with fewer draws and more strategic possibilities. When playing against our AI, you'll find it adapts to your skill level, providing an appropriate challenge whether you're a beginner or an experienced player. The game is easy to learn but offers enough depth to keep players engaged as they discover new strategies and tactical combinations.
-                                </p>
-                            </div>
-
-                            <div class="rounded-lg border border-gray-200 p-3 sm:p-4">
-                                <h3 class="text-base sm:text-lg font-semibold text-gray-900">What are common beginner mistakes?</h3>
-                                <p class="mt-2 text-sm sm:text-base text-gray-700">
-                                    New players often make several common mistakes that can be easily avoided:<br />
-                                    • Ignoring diagonal threats from opponents, which can lead to unexpected losses<br />
-                                    • Placing discs beneath opponent's potential winning moves, inadvertently setting them up for victory<br />
-                                    • Focusing too much on attack while neglecting defense, leaving themselves vulnerable<br />
-                                    • Not planning connection paths in advance, limiting their strategic options<br />
-                                    • Overusing edge columns, which limit development options and make it harder to create winning combinations<br />
-                                    • Failing to recognize patterns that could lead to forced wins<br />
-                                    • Not thinking about how their moves might help their opponent<br />
-                                    • Overlooking the importance of controlling the center of the board
-                                </p>
-                            </div>
-
-                            <div class="rounded-lg border border-gray-200 p-3 sm:p-4">
-                                <h3 class="text-base sm:text-lg font-semibold text-gray-900">How can I improve my game?</h3>
-                                <p class="mt-2 text-sm sm:text-base text-gray-700">
-                                    Improving your Connect 4 skills involves several key practices:<br />
-                                    • Study expert gameplay techniques and common winning patterns<br />
-                                    • Practice identifying potential connections and threats before they become obvious<br />
-                                    • Learn common tactical patterns and how to both create and defend against them<br />
-                                    • Develop foresight by thinking 3-4 moves ahead in various scenarios<br />
-                                    • Analyze your losses to understand where your strategy could be improved<br />
-                                    • Practice against different skill levels of AI to challenge yourself<br />
-                                    • Learn to recognize and create "forced win" situations<br />
-                                    • Study classic games and strategies from experienced players<br />
-                                    • Focus on understanding both offensive and defensive positioning
-                                </p>
-                            </div>
-                        </div>
-                    </section>
+              <!-- Basic Rules -->
+              <div class="space-y-6 mb-12">
+                <div class="bg-purple-50 p-6 rounded-lg">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-4">📋 Basic Rules</h3>
+                  <div class="text-gray-600 space-y-4">
+                    <p>
+                      Your mission is to organize 16 words into four distinct groups of four related words. Each group shares a unique connection or
+                      theme that binds them together.
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2">
+                      <li>Select four words that you believe are connected</li>
+                      <li>Submit your selection to verify if you've found a valid group</li>
+                      <li>Continue until all words are correctly categorized</li>
+                      <li>Use your mistakes wisely - you have a limited number!</li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add any necessary JavaScript functionality here
-        });
+                <!-- Difficulty Levels -->
+                <div class="bg-purple-50 p-6 rounded-lg">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-4">📊 Difficulty Progression</h3>
+                  <div class="text-gray-600 space-y-4">
+                    <p>Puzzles range from straightforward to complex connections:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                      <li>Basic: Simple categories like colors, animals, or numbers</li>
+                      <li>Intermediate: Word relationships, synonyms, and common phrases</li>
+                      <li>Advanced: Cultural references, idioms, and subtle connections</li>
+                      <li>Expert: Complex metaphors and multi-layered associations</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Strategy Guide -->
+                <div class="bg-purple-50 p-6 rounded-lg">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-4">🎯 Strategy Guide</h3>
+                  <div class="text-gray-600 space-y-4">
+                    <p>Master these techniques to improve your solving skills:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                      <li>Start with obvious connections first</li>
+                      <li>Look for words that might have multiple meanings</li>
+                      <li>Consider common phrases and expressions</li>
+                      <li>Use process of elimination when stuck</li>
+                      <li>Pay attention to word patterns and themes</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Advanced Tips -->
+              <div class="space-y-6 mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Advanced Techniques</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-4">Pattern Recognition</h4>
+                    <p class="text-gray-600">Learn to identify common patterns in word relationships:</p>
+                    <ul class="list-disc pl-6 mt-2 text-gray-600">
+                      <li>Synonyms and antonyms</li>
+                      <li>Category members</li>
+                      <li>Parts of common phrases</li>
+                      <li>Related concepts</li>
+                    </ul>
+                  </div>
+                  <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-4">Problem-Solving Approach</h4>
+                    <p class="text-gray-600">Develop a systematic approach:</p>
+                    <ul class="list-disc pl-6 mt-2 text-gray-600">
+                      <li>Scan for obvious groupings first</li>
+                      <li>Test multiple possibilities</li>
+                      <li>Use elimination strategy</li>
+                      <li>Think creatively about connections</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Section -->
+              <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h3>
+                <div class="space-y-4">
+                  <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                    <h4 class="text-lg font-semibold text-gray-900 p-4 pb-2">How many puzzles are available?</h4>
+                    <div class="text-gray-600 px-4 pb-4">
+                      Connections Unlimited features an extensive collection of puzzles that you can play anytime. New puzzles are regularly added to
+                      keep the challenge fresh and exciting!
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                    <h4 class="text-lg font-semibold text-gray-900 p-4 pb-2">Is there a daily limit?</h4>
+                    <div class="text-gray-600 px-4 pb-4">
+                      No! Unlike some other word games, you can play as many puzzles as you want, whenever you want. Perfect for extended practice
+                      sessions or quick brain training breaks.
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                    <h4 class="text-lg font-semibold text-gray-900 p-4 pb-2">Do I need to create an account?</h4>
+                    <div class="text-gray-600 px-4 pb-4">
+                      No account needed! Just visit the page and start playing immediately. However, creating an account allows you to track your
+                      progress and save your achievements.
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
+                    <h4 class="text-lg font-semibold text-gray-900 p-4 pb-2">Is the game mobile-friendly?</h4>
+                    <div class="text-gray-600 px-4 pb-4">
+                      Yes! The game is fully optimized for all devices - play seamlessly on your smartphone, tablet, or desktop computer with the same
+                      great experience.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-white mt-12 border-t border-gray-100">
+      <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-gray-500 text-sm">© 2024 Connections Unlimited. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Schema.org JSON-LD for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": "Connections Unlimited",
+        "description": "An addictive word grouping puzzle game where players find hidden connections between words and sort them into categories.",
+        "genre": ["Word Game", "Puzzle Game", "Educational Game", "Brain Training"],
+        "url": "https://yourdomain.com/igames/connectionsunlimited/",
+        "author": {
+          "@type": "Organization",
+          "name": "Connections Unlimited"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "GameConfig": {
+          "@type": "Thing",
+          "name": "Word Categories"
+        },
+        "numberOfPlayers": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 1
+        },
+        "educationalUse": ["Brain Training", "Vocabulary Building"],
+        "audience": {
+          "@type": "Audience",
+          "suggestedMinAge": "12"
+        }
+      }
     </script>
-</body>
-</html> 
+  </body>
+</html>
